@@ -1,0 +1,14 @@
+.bigfont {
+    font-size: 100px ;
+    color: red; 
+  } 
+  .right {
+     text-align: right;
+  }
+  #box {
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    background-color: #3b0346;
+
+  }
