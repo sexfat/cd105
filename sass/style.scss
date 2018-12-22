@@ -1,0 +1,54 @@
+@import "var";
+@import "reset";
+// @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "header";
+@import "footer";
+
+
+
+.box {
+    font-size: $fontsize;
+}
+
+// 註解
+h1 {
+    background-color: $color;
+    color: #fff;
+}
+
+
+.wrapper {
+    font-size: $fontsize;
+    background-color: $color;
+    content: $text;
+
+}
+
+
+// nesting
+
+
+.container_flow {
+    .row {
+        width: 1200px;
+
+        span {
+            display: block;
+        }
+    }
+
+    #id {
+        width: 300px;
+    }
+
+    #sidebar {
+        width: 300px;
+        color: $color;
+
+        .box {
+            background-color: rgb(255, 2, 2);
+        }
+
+    }
+}
+
