@@ -53,12 +53,14 @@ header .wrapper {
 footer .wrapper {
   width: 1000px; }
 
-.box {
+.finder {
   font-size: 40px; }
 
 h1 {
   background-color: #fa2302;
   color: #fff; }
+  h1 .finder {
+    font-size: 100px; }
 
 .wrapper {
   font-size: 40px;
@@ -78,3 +80,68 @@ h1 {
   color: #fa2302; }
   .container_flow #sidebar .box {
     background-color: #ff0202; }
+
+.section {
+  width: 100vw;
+  height: 500px;
+  background-color: #c0ff11; }
+
+.content {
+  width: 100vw;
+  height: 500px;
+  background-color: #ffee90;
+  margin-left: auto;
+  margin-right: auto; }
+
+footer {
+  width: 100vw;
+  height: 500px;
+  background-color: #00ddec;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wapper {
+  width: 100vw;
+  height: 500px;
+  background-color: #82df99;
+  margin-left: auto;
+  margin-right: auto; }
+
+a {
+  color: #82df99; }
+  a:hover {
+    color: #1a5342; }
+
+.areatext {
+  width: 80vw;
+  height: 100vh;
+  background-color: #83ffda; }
+
+.wrapper-flow {
+  width: 100vw;
+  height: 400px;
+  background-color: #1a5342; }
+
+.btn-lg {
+  width: 80px;
+  height: 10px;
+  background-color: #1a6407;
+  border: 1px solid #f20;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer; }
+  .btn-lg:hover {
+    background-color: #26940a; }
+
+.btn-mx {
+  width: 60px;
+  height: 10px;
+  background-color: #f5b01d;
+  border: 1px solid #74b300;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer; }
+  .btn-mx:hover {
+    background-color: #f7c14e; }

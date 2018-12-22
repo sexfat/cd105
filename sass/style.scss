@@ -4,9 +4,12 @@
 @import "header";
 @import "footer";
 
+$classname : 'finder';
 
 
-.box {
+
+
+.#{$classname} {
     font-size: $fontsize;
 }
 
@@ -14,6 +17,10 @@
 h1 {
     background-color: $color;
     color: #fff;
+
+    .#{$classname} {
+        font-size: 100px;
+    }
 }
 
 
@@ -48,7 +55,95 @@ h1 {
         .box {
             background-color: rgb(255, 2, 2);
         }
-
     }
 }
 
+
+
+
+@mixin margin_auto() {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@mixin box($bgc) {
+    width: 100vw;
+    height: 500px;
+    background-color: $bgc;
+}
+
+
+.section {
+    @include box(rgb(192, 255, 17));
+}
+
+
+.content {
+    @include box(#ffee90);
+    @include margin_auto();
+}
+
+footer {
+    @include box(#00ddec);
+    @include margin_auto();
+}
+
+.wapper {
+    @include box(#82df99);
+    @include margin_auto();
+}
+
+a {
+    color: #82df99;
+
+    &:hover {
+        color: #1a5342;
+    }
+}
+
+
+
+
+
+@mixin section($areaname, $width, $height, $bgc) {
+    .#{$areaname} {
+        width: $width;
+        height: $height;
+        background-color: $bgc;
+    }
+}
+
+// .sidebar {
+//     @include section (100vw, 100vh, #ffee90);
+// }
+
+
+@include section ('areatext', 80vw, 100vh, #83ffda);
+
+@include section ('wrapper-flow', 100vw, 400px, #1a5342);
+
+@mixin btn($btns , $width ,$height , $bgc , $bordercolor,$bordius ,$pad) {
+    .#{$btns} {
+        width: $width;
+        height: $height;
+        background-color: $bgc;
+        border: 1px solid $bordercolor;
+        border-radius: $bordius;
+        padding: $pad;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+            background-color: lighten($bgc,10);
+        }
+    }
+}
+
+
+@include btn('btn-lg' , 80px , 10px , rgb(26, 100, 7)  , #f20 , 10px , 10px);
+
+
+
+
+@include btn('btn-mx' , 60px , 10px , rgb(245, 176, 29)  , rgb(116, 179, 0) , 10px , 10px);
