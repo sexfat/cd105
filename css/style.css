@@ -425,3 +425,138 @@ span {
 
 .margintop-80 {
   margin-top: 80px; }
+
+.wrapper .col-md-1 {
+  width: 8.33333%;
+  font-size: 10px; }
+
+.wrapper .col-md-2 {
+  width: 16.66667%;
+  font-size: 10px; }
+
+.wrapper .col-md-3 {
+  width: 25%;
+  font-size: 10px; }
+
+.wrapper .col-md-4 {
+  width: 33.33333%;
+  font-size: 10px; }
+
+.wrapper .col-md-5 {
+  width: 41.66667%;
+  font-size: 10px; }
+
+.wrapper .col-md-6 {
+  width: 50%;
+  font-size: 10px; }
+
+.wrapper .col-md-7 {
+  width: 58.33333%;
+  font-size: 10px; }
+
+.wrapper .col-md-8 {
+  width: 66.66667%;
+  font-size: 10px; }
+
+.wrapper .col-md-9 {
+  width: 75%;
+  font-size: 10px; }
+
+.wrapper .col-md-10 {
+  width: 83.33333%;
+  font-size: 10px; }
+
+.wrapper .col-md-11 {
+  width: 91.66667%;
+  font-size: 10px; }
+
+.wrapper .col-md-12 {
+  width: 100%;
+  font-size: 10px; }
+
+.sidebar .col-md-1 {
+  width: 5%;
+  font-weight: bold; }
+
+.sidebar .col-md-2 {
+  width: 10%;
+  font-weight: bold; }
+
+.sidebar .col-md-3 {
+  width: 15%;
+  font-weight: bold; }
+
+.sidebar .col-md-4 {
+  width: 20%;
+  font-weight: bold; }
+
+.sidebar .col-md-5 {
+  width: 25%;
+  font-weight: bold; }
+
+.sidebar .col-md-6 {
+  width: 30%;
+  font-weight: bold; }
+
+.sidebar .col-md-7 {
+  width: 35%;
+  font-weight: bold; }
+
+.sidebar .col-md-8 {
+  width: 40%;
+  font-weight: bold; }
+
+.sidebar .col-md-9 {
+  width: 45%;
+  font-weight: bold; }
+
+.sidebar .col-md-10 {
+  width: 50%;
+  font-weight: bold; }
+
+.sidebar .col-md-11 {
+  width: 55%;
+  font-weight: bold; }
+
+.sidebar .col-md-12 {
+  width: 60%;
+  font-weight: bold; }
+
+.sidebar .col-md-13 {
+  width: 65%;
+  font-weight: bold; }
+
+.sidebar .col-md-14 {
+  width: 70%;
+  font-weight: bold; }
+
+.sidebar .col-md-15 {
+  width: 75%;
+  font-weight: bold; }
+
+.sidebar .col-md-16 {
+  width: 80%;
+  font-weight: bold; }
+
+.sidebar .col-md-17 {
+  width: 85%;
+  font-weight: bold; }
+
+.sidebar .col-md-18 {
+  width: 90%;
+  font-weight: bold; }
+
+.sidebar .col-md-19 {
+  width: 95%;
+  font-weight: bold; }
+
+.sidebar .col-md-20 {
+  width: 100%;
+  font-weight: bold; }
+
+body {
+  background-color: #fff; }
+  body .wrapper {
+    width: 100%; }
+    body .wrapper .footer {
+      height: 300px; }

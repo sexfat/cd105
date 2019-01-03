@@ -263,17 +263,80 @@ span {
     }
 }
 
-
 @include push-top(80);
 
+// .col-md-12 {
+//     width: 100%
+// }
 
-
-
-// .boxs{
-//     @extend .uikit ;
+// .col-md-6 {
+//     width: 50%;
 // }
 
 
-// .boxs{
-//     @include uikit() ;
-// }
+// $num : 12;
+
+@mixin grid($num) {
+    @for $i from 1 through $num {
+        .col-md-#{$i} {
+            width: ($i / $num) * 100%;
+            @content;
+        }
+    }
+}
+
+.wrapper {
+    @include grid(12) {
+        font-size: 10px;
+    }
+
+}
+
+.sidebar {
+    @include grid(20) {
+        font-weight: bold;
+    }
+}
+
+
+
+
+// $themecolor : yellow;
+
+
+@mixin theme($themecolor) {
+
+    body {
+        @if $themecolor  ==green {
+            background-color: green;
+            @content;
+        }
+
+        @else {
+            background-color: #fff;
+            @content;
+        }
+    }
+}
+
+@include theme(yellow) {
+    .wrapper {
+        width: 100%;
+
+        .footer {
+            height: 300px;
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+}
+
+;
