@@ -54,7 +54,7 @@ footer .wrapper {
   width: 1000px; }
 
 .finder {
-  font-size: 40px; }
+  font-size: 18px; }
 
 h1 {
   background-color: #fa2302;
@@ -63,7 +63,7 @@ h1 {
     font-size: 100px; }
 
 .wrapper {
-  font-size: 40px;
+  font-size: 18px;
   background-color: #fa2302;
   content: "寬度大於高度"; }
 
@@ -145,3 +145,283 @@ a {
   cursor: pointer; }
   .btn-mx:hover {
     background-color: #f7c14e; }
+
+.box {
+  width: 100px;
+  height: 200px;
+  color: #83ffda;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px; }
+  .box .areatext {
+    width: 80vw;
+    height: 100vh;
+    background-color: #83ffda; }
+
+.uikit, .wrapper {
+  font-size: 20px;
+  font-weight: bold; }
+
+.wrappers {
+  font-size: 20px;
+  font-weight: bold; }
+
+.go {
+  font-size: 20px;
+  font-weight: bold; }
+
+.find {
+  font-size: 100px; }
+
+span {
+  width: 1px; }
+
+.dos {
+  width: 20px;
+  height: 15px; }
+
+.dot-10 {
+  margin: 10px; }
+
+.dot-11 {
+  margin: 11px; }
+
+.margintop-1 {
+  margin-top: 1px; }
+
+.margintop-2 {
+  margin-top: 2px; }
+
+.margintop-3 {
+  margin-top: 3px; }
+
+.margintop-4 {
+  margin-top: 4px; }
+
+.margintop-5 {
+  margin-top: 5px; }
+
+.margintop-6 {
+  margin-top: 6px; }
+
+.margintop-7 {
+  margin-top: 7px; }
+
+.margintop-8 {
+  margin-top: 8px; }
+
+.margintop-9 {
+  margin-top: 9px; }
+
+.margintop-10 {
+  margin-top: 10px; }
+
+.margintop-11 {
+  margin-top: 11px; }
+
+.margintop-12 {
+  margin-top: 12px; }
+
+.margintop-13 {
+  margin-top: 13px; }
+
+.margintop-14 {
+  margin-top: 14px; }
+
+.margintop-15 {
+  margin-top: 15px; }
+
+.margintop-16 {
+  margin-top: 16px; }
+
+.margintop-17 {
+  margin-top: 17px; }
+
+.margintop-18 {
+  margin-top: 18px; }
+
+.margintop-19 {
+  margin-top: 19px; }
+
+.margintop-20 {
+  margin-top: 20px; }
+
+.margintop-21 {
+  margin-top: 21px; }
+
+.margintop-22 {
+  margin-top: 22px; }
+
+.margintop-23 {
+  margin-top: 23px; }
+
+.margintop-24 {
+  margin-top: 24px; }
+
+.margintop-25 {
+  margin-top: 25px; }
+
+.margintop-26 {
+  margin-top: 26px; }
+
+.margintop-27 {
+  margin-top: 27px; }
+
+.margintop-28 {
+  margin-top: 28px; }
+
+.margintop-29 {
+  margin-top: 29px; }
+
+.margintop-30 {
+  margin-top: 30px; }
+
+.margintop-31 {
+  margin-top: 31px; }
+
+.margintop-32 {
+  margin-top: 32px; }
+
+.margintop-33 {
+  margin-top: 33px; }
+
+.margintop-34 {
+  margin-top: 34px; }
+
+.margintop-35 {
+  margin-top: 35px; }
+
+.margintop-36 {
+  margin-top: 36px; }
+
+.margintop-37 {
+  margin-top: 37px; }
+
+.margintop-38 {
+  margin-top: 38px; }
+
+.margintop-39 {
+  margin-top: 39px; }
+
+.margintop-40 {
+  margin-top: 40px; }
+
+.margintop-41 {
+  margin-top: 41px; }
+
+.margintop-42 {
+  margin-top: 42px; }
+
+.margintop-43 {
+  margin-top: 43px; }
+
+.margintop-44 {
+  margin-top: 44px; }
+
+.margintop-45 {
+  margin-top: 45px; }
+
+.margintop-46 {
+  margin-top: 46px; }
+
+.margintop-47 {
+  margin-top: 47px; }
+
+.margintop-48 {
+  margin-top: 48px; }
+
+.margintop-49 {
+  margin-top: 49px; }
+
+.margintop-50 {
+  margin-top: 50px; }
+
+.margintop-51 {
+  margin-top: 51px; }
+
+.margintop-52 {
+  margin-top: 52px; }
+
+.margintop-53 {
+  margin-top: 53px; }
+
+.margintop-54 {
+  margin-top: 54px; }
+
+.margintop-55 {
+  margin-top: 55px; }
+
+.margintop-56 {
+  margin-top: 56px; }
+
+.margintop-57 {
+  margin-top: 57px; }
+
+.margintop-58 {
+  margin-top: 58px; }
+
+.margintop-59 {
+  margin-top: 59px; }
+
+.margintop-60 {
+  margin-top: 60px; }
+
+.margintop-61 {
+  margin-top: 61px; }
+
+.margintop-62 {
+  margin-top: 62px; }
+
+.margintop-63 {
+  margin-top: 63px; }
+
+.margintop-64 {
+  margin-top: 64px; }
+
+.margintop-65 {
+  margin-top: 65px; }
+
+.margintop-66 {
+  margin-top: 66px; }
+
+.margintop-67 {
+  margin-top: 67px; }
+
+.margintop-68 {
+  margin-top: 68px; }
+
+.margintop-69 {
+  margin-top: 69px; }
+
+.margintop-70 {
+  margin-top: 70px; }
+
+.margintop-71 {
+  margin-top: 71px; }
+
+.margintop-72 {
+  margin-top: 72px; }
+
+.margintop-73 {
+  margin-top: 73px; }
+
+.margintop-74 {
+  margin-top: 74px; }
+
+.margintop-75 {
+  margin-top: 75px; }
+
+.margintop-76 {
+  margin-top: 76px; }
+
+.margintop-77 {
+  margin-top: 77px; }
+
+.margintop-78 {
+  margin-top: 78px; }
+
+.margintop-79 {
+  margin-top: 79px; }
+
+.margintop-80 {
+  margin-top: 80px; }

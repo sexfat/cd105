@@ -3,11 +3,7 @@
 // @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "header";
 @import "footer";
-
-$classname : 'finder';
-
-
-
+$classname: 'finder';
 
 .#{$classname} {
     font-size: $fontsize;
@@ -23,18 +19,13 @@ h1 {
     }
 }
 
-
 .wrapper {
     font-size: $fontsize;
     background-color: $color;
     content: $text;
-
 }
 
-
 // nesting
-
-
 .container_flow {
     .row {
         width: 1200px;
@@ -58,15 +49,10 @@ h1 {
     }
 }
 
-
-
-
 @mixin margin_auto() {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 @mixin box($bgc) {
     width: 100vw;
@@ -74,11 +60,9 @@ h1 {
     background-color: $bgc;
 }
 
-
 .section {
     @include box(rgb(192, 255, 17));
 }
-
 
 .content {
     @include box(#ffee90);
@@ -103,10 +87,6 @@ a {
     }
 }
 
-
-
-
-
 @mixin section($areaname, $width, $height, $bgc) {
     .#{$areaname} {
         width: $width;
@@ -118,13 +98,10 @@ a {
 // .sidebar {
 //     @include section (100vw, 100vh, #ffee90);
 // }
-
-
 @include section ('areatext', 80vw, 100vh, #83ffda);
-
 @include section ('wrapper-flow', 100vw, 400px, #1a5342);
 
-@mixin btn($btns , $width ,$height , $bgc , $bordercolor,$bordius ,$pad) {
+@mixin btn($btns, $width, $height, $bgc, $bordercolor, $bordius, $pad) {
     .#{$btns} {
         width: $width;
         height: $height;
@@ -134,16 +111,169 @@ a {
         padding: $pad;
         text-align: center;
         cursor: pointer;
+
         &:hover {
-            background-color: lighten($bgc,10);
+            background-color: lighten($bgc, 10);
+        }
+    }
+}
+
+@include btn('btn-lg', 80px, 10px, rgb(26, 100, 7), #f20, 10px, 10px);
+@include btn('btn-mx', 60px, 10px, rgb(245, 176, 29), rgb(116, 179, 0), 10px, 10px);
+
+// @mixin test($condition) {
+//     $color: if($condition, blue, red);
+//     color: $color
+// }
+
+// .firstClass {
+//     @include test(true);
+// }
+
+// .secondClass {
+//     @include test(false);
+// }
+
+
+@mixin marginauto($mgtop) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $mgtop;
+}
+
+
+@mixin boxs($width, $height, $color, $top) {
+    width: $width;
+    height: $height;
+    color: $color;
+    @include section ('areatext', 80vw, 100vh, #83ffda);
+    @include marginauto($top);
+}
+
+.box {
+    @include boxs(100px, 200px, #83ffda, 30px);
+}
+
+
+.uikit {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@mixin uikit() {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.wrapper {
+    @extend .uikit;
+}
+
+.wrappers {
+    @include uikit();
+}
+
+@mixin qwe() {
+    font-size: 100px;
+}
+
+.go {
+    @include uikit();
+}
+
+.find {
+    @include qwe();
+}
+
+
+
+
+// div {
+//     width: 10 + 20px;
+//     height: 30 - 40px;
+//     font-size: 20px + 10 * 10;
+//     font: (20px / 2);
+// }
+
+span {
+    width: floor(10px / 6);
+}
+
+
+
+@mixin bodysetting($fontsize) {
+
+    body {
+        font-size: $fontsize;
+
+        h1 {
+            font-size: round($fontsize * 3.5)
+        }
+
+        h2 {
+            font-size: round($fontsize * 3)
+        }
+
+        h3 {
+            font-size: round($fontsize * 2.6)
+        }
+
+        h4 {
+            font-size: round($fontsize * 2)
+        }
+
+        h5 {
+            font-size: round($fontsize * 1.5)
+        }
+    }
+
+}
+
+
+// @include bodysetting(14px);
+
+
+
+@mixin box-model($width) {
+    width: $width;
+    height: $width * (3/4);
+}
+
+
+.dos {
+    @include box-model(20px);
+}
+
+
+@for $i from 10 through 11 {
+    .dot-#{$i} {
+        margin: $i * 1px;
+    }
+}
+
+
+
+@mixin push-top($num) {
+    @for $i from 1 through $num {
+        .margintop-#{$i} {
+            margin-top: $i * 1px;
         }
     }
 }
 
 
-@include btn('btn-lg' , 80px , 10px , rgb(26, 100, 7)  , #f20 , 10px , 10px);
+@include push-top(80);
 
 
 
 
-@include btn('btn-mx' , 60px , 10px , rgb(245, 176, 29)  , rgb(116, 179, 0) , 10px , 10px);
+// .boxs{
+//     @extend .uikit ;
+// }
+
+
+// .boxs{
+//     @include uikit() ;
+// }
