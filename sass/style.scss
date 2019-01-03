@@ -1,8 +1,15 @@
-@import "var";
-@import "reset";
+@import "base/var";
+@import "base/reset";
+@import "mixin/mixin";
+@import "base/setting";
+@import "desktop";
 // @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "header";
 @import "footer";
+
+
+
+
 $classname: 'finder';
 
 .#{$classname} {
@@ -307,7 +314,7 @@ span {
 @mixin theme($themecolor) {
 
     body {
-        @if $themecolor  ==green {
+        @if $themecolor==green {
             background-color: green;
             @content;
         }
@@ -325,18 +332,24 @@ span {
 
         .footer {
             height: 300px;
-
-
         }
     }
-
-
-
-
-
-
-
-
 }
 
-;
+
+
+
+
+
+@include img-module(a1 b2){
+     width: 300px;
+     height: 150px;
+};
+
+
+@include img-module(c1 d2){
+    width: 450px;
+    height: 300px;
+};
+
+

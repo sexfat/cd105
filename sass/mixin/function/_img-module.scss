@@ -1,0 +1,8 @@
+@mixin img-module($list) {
+    @each $pic in $list {
+        .img-#{$pic} {
+            background: url('./assets/img/#{$pic}.jpg');
+            @content;
+        }
+    }
+}

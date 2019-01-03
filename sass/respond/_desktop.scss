@@ -1,0 +1,9 @@
+//桌機版
+@include rwd(desktop) {
+    .wrapper {
+        width: 90%;
+        .section {
+            width: 90vw;
+        }
+    }
+}

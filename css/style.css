@@ -46,6 +46,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@media all and (min-width: 1200px) {
+  .wrapper {
+    width: 90%; }
+    .wrapper .section {
+      width: 90vw; } }
+
 header .wrapper {
   width: 1000px;
   height: 100px; }
@@ -560,3 +566,23 @@ body {
     width: 100%; }
     body .wrapper .footer {
       height: 300px; }
+
+.img-a1 {
+  background: url("./assets/img/a1.jpg");
+  width: 300px;
+  height: 150px; }
+
+.img-b2 {
+  background: url("./assets/img/b2.jpg");
+  width: 300px;
+  height: 150px; }
+
+.img-c1 {
+  background: url("./assets/img/c1.jpg");
+  width: 450px;
+  height: 300px; }
+
+.img-d2 {
+  background: url("./assets/img/d2.jpg");
+  width: 450px;
+  height: 300px; }

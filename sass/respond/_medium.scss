@@ -1,0 +1,9 @@
+//平板
+@include rwd(medium) {
+    .wrapper {
+        width: 80%;
+        .section {
+            width: 80vw;
+        }
+    }
+}
