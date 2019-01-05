@@ -25,6 +25,15 @@
 
 
 }
+#btn_to {
+    width:  50px;
+    height: 30px;
+    background-color: rgb(33, 159, 233);
+    cursor: pointer;
+
+    
+
+}
 
 .section_01 {
     background-color: rgb(255, 250, 190);
@@ -70,9 +79,20 @@
 }
 
 
-.scetion_02{
+.section_02{
 
+    .box_01 {
+        background-color: rgb(125, 102, 148);
 
+    }
+    .box_02 {
+        background-color: rgb(41, 63, 136);
+
+    }
+}
+
+.section_03 {
+    background-color: rgb(255, 139, 139);
 
 
 }

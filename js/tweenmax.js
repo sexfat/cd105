@@ -71,13 +71,83 @@ TweenMax.fromTo('.box_04', 1, {
 
 TweenMax.to('.box_05', 2, {
     rotationY: 360,
-    transformOrigin:"left 50% -200",
-    transformPerspective:600,
+    transformOrigin: "left 50% -200",
+    transformPerspective: 600,
     repeat: -1,
     borderRadius: '100%',
     ease: Power0.easeNone,
-    
-})
+
+});
+
+
+
+
+
+var tl = new TimelineMax({
+    repeat: 1,
+    // onComplete: callback 
+    // yoyo: true
+});
+
+tl.to('.section_02 .box_02', 1, {
+    y: 100
+}).to('.section_02 .box_01', 1, {
+    x: 100
+});
+
+
+// tl.play();
+// tl.stop();
+// tl.timeScale(1);
+// tl.pause();
+// tl.reverse(0);
+
+
+
+
+
+// function callback() {
+//     alert('完成動畫');
+//   }
+
+
+
+
+
+//tl.add(
+// 動畫
+//)
+
+
+document.getElementById('btn_to').onclick =function (){
+  
+    TweenMax.to(window, 2, {scrollTo:{y:"#arch"}});
+
+}
+
+
+var controller = new ScrollMagic.Controller();
+
+var scene = new ScrollMagic.Scene({
+    triggerElement: '#trigger01'
+    // triggerHook: 0.5,
+    // reverse: false
+}).setTween(tl)
+.addIndicators()
+.addTo(controller);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
