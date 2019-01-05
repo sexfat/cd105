@@ -13,6 +13,7 @@
     width: 150px;
     height: 30px;
     background-color: rgb(222, 192, 21);
+    margin-bottom: 10px;
 }
 
 
@@ -43,9 +44,10 @@
         display: block;
     }
     .width {
+        margin-top: 20px;
         width: 100px;
-        height: 30px;
-        background-color: #fff;
+        height: 10px;
+        background-color: rgb(0, 0, 0);
     }
     .box_02 {
        background-color: rgb(41, 189, 0);   
@@ -54,12 +56,22 @@
         background-color: rgb(30, 206, 174);
         margin:5px 0px;
      }
+     .box_04 {
+         background-color: rgb(39, 185, 247);   
+     }
+     .box_05 {
+        background-color: rgb(164, 39, 254);
+        @include margin-auto(); 
+        width: 100px;
+        height: 100px;  
+    }
 
 
 }
 
 
 .scetion_02{
+
 
 
 
