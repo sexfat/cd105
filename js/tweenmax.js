@@ -44,3 +44,5 @@ TweenMax.fromTo('.text-inner', .5, {
     y: 0
     // ease: Elastic.easeOut
 });
+
+TweenMax.to('.width' ,1,{ scaleX: 50})
