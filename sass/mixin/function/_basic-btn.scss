@@ -1,0 +1,16 @@
+@mixin btn($btns, $width, $height, $bgc, $bordercolor, $bordius, $pad) {
+    .#{$btns} {
+        width: $width;
+        height: $height;
+        background-color: $bgc;
+        border: 1px solid $bordercolor;
+        border-radius: $bordius;
+        padding: $pad;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($bgc, 10);
+        }
+    }
+}

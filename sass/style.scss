@@ -1,11 +1,24 @@
+//基本設定 字體 顏色 初始化 變數設定 組件
+
 @import "base/var";
 @import "base/reset";
 @import "mixin/mixin";
 @import "base/setting";
-@import "desktop";
+
+
+
+
+
+
+
+
+
+
+
+// @import "desktop";
 // @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "header";
-@import "footer";
+// @import "header";
+// @import "footer";
 
 
 
@@ -56,10 +69,7 @@ h1 {
     }
 }
 
-@mixin margin_auto() {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 @mixin box($bgc) {
     width: 100vw;
@@ -94,13 +104,7 @@ a {
     }
 }
 
-@mixin section($areaname, $width, $height, $bgc) {
-    .#{$areaname} {
-        width: $width;
-        height: $height;
-        background-color: $bgc;
-    }
-}
+
 
 // .sidebar {
 //     @include section (100vw, 100vh, #ffee90);
@@ -108,22 +112,7 @@ a {
 @include section ('areatext', 80vw, 100vh, #83ffda);
 @include section ('wrapper-flow', 100vw, 400px, #1a5342);
 
-@mixin btn($btns, $width, $height, $bgc, $bordercolor, $bordius, $pad) {
-    .#{$btns} {
-        width: $width;
-        height: $height;
-        background-color: $bgc;
-        border: 1px solid $bordercolor;
-        border-radius: $bordius;
-        padding: $pad;
-        text-align: center;
-        cursor: pointer;
 
-        &:hover {
-            background-color: lighten($bgc, 10);
-        }
-    }
-}
 
 @include btn('btn-lg', 80px, 10px, rgb(26, 100, 7), #f20, 10px, 10px);
 @include btn('btn-mx', 60px, 10px, rgb(245, 176, 29), rgb(116, 179, 0), 10px, 10px);
@@ -214,6 +203,7 @@ span {
 
     body {
         font-size: $fontsize;
+        @content;
 
         h1 {
             font-size: round($fontsize * 3.5)
@@ -339,17 +329,15 @@ span {
 
 
 
+// @include img-module(a1 b2){
+//      width: 300px;
+//      height: 150px;
+// };
 
 
-@include img-module(a1 b2){
-     width: 300px;
-     height: 150px;
-};
-
-
-@include img-module(c1 d2){
-    width: 450px;
-    height: 300px;
-};
+// @include img-module(c1 d2){
+//     width: 450px;
+//     height: 300px;
+// };
 
 

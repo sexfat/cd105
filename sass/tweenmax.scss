@@ -1,0 +1,40 @@
+//基本設定 字體 顏色 初始化 變數設定 組件
+
+@import "base/var";
+@import "base/reset";
+@import "mixin/mixin";
+
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(222, 192, 21);
+}
+
+
+.section_01 {
+    background-color: rgb(255, 250, 190);
+    .box_01 {
+       position: relative;
+        // margin-left: 300px;
+        // margin-top: 300px;
+        top: 300px;
+        left: 300px;
+    }
+    .box_02 {
+       background-color: rgb(41, 189, 0);   
+    }
+
+
+}
+
+
+.scetion_02{
+
+
+
+}

@@ -1,0 +1,7 @@
+@mixin section($areaname, $width, $height, $bgc) {
+    .#{$areaname} {
+        width: $width;
+        height: $height;
+        background-color: $bgc;
+    }
+}
