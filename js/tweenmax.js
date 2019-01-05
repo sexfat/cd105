@@ -69,12 +69,14 @@ TweenMax.fromTo('.box_04', 1, {
 
 
 
-TweenMax.to('.box_05', 1, {
+TweenMax.to('.box_05', 2, {
     rotationY: 360,
     transformOrigin:"left 50% -200",
     transformPerspective:600,
     repeat: -1,
-    ease: Power0.easeNone
+    borderRadius: '100%',
+    ease: Power0.easeNone,
+    
 })
 
 
