@@ -93,6 +93,19 @@
 
 .section_03 {
     background-color: rgb(255, 139, 139);
+    // #aaa {
+    //     position: relative;
+    //     top: 100px;
+    // }
+    .scrollbox {
+        width: 200px;
+        height: 60px;
+        position: relative;
+        top: 100px;
+        left: 200px; 
+        // margin-top:10px;
+        background-color: rgb(205, 46, 46);
+    }
 
 
 }

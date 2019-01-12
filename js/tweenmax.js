@@ -126,14 +126,34 @@ document.getElementById('btn_to').onclick =function (){
 }
 
 
+//1
 var controller = new ScrollMagic.Controller();
 
-var scene = new ScrollMagic.Scene({
-    triggerElement: '#trigger01'
+
+
+
+
+var an01 = TweenMax.to('.scrollbox' , .7 , {
+    // x : 100
+    rotation: 720,
+    ease: Power0.easeNone,
+    transformOrigin: "center center",
+    repeat:-1
+}) 
+
+
+
+
+var scene01 = new ScrollMagic.Scene({
+    triggerElement: '#aaa',
+    offset: 0,
+    // duration: '100%'
     // triggerHook: 0.5,
     // reverse: false
-}).setTween(tl)
-.addIndicators()
+}).setTween(an01)
+.addIndicators({
+        name: 'scence 02'
+      })
 .addTo(controller);
 
 
