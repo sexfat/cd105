@@ -201,6 +201,10 @@ btnss.set('.btns', {
     ease: Power0.easeNone,
 })
 
+
+
+
+
 var scene02 = new ScrollMagic.Scene({
         triggerElement: '#bbb',
         offset: 0,
@@ -216,23 +220,80 @@ var scene02 = new ScrollMagic.Scene({
 
 
 
+var animation_04 = TweenMax.to('.setclass', 1, {
+    x: 300
+})
+
 var scene03 = new ScrollMagic.Scene({
         triggerElement: '#ccc',
-     
+
         // triggerHook: 0.5,
-        // reverse: true
-    }).setClassToggle('.setclass' , 'on')
+        reverse: true
+    }).setClassToggle('.setbg', 'on')
+    .setTween(animation_04)
     .addIndicators({
         name: 'scence 03'
     })
     .addTo(controller);
 
+var tlpin = new TimelineMax();
+
+
+tlpin.to('.pinbox_1', 1, {
+    x: 100
+}).to('.pinbox_2', 1, {
+    x: 200
+}).to('.pinbox_3', 1, {
+    x: 300
+});
+
+
+
+var scene03 = new ScrollMagic.Scene({
+    triggerElement: '#ddd',
+    duration: '300%',
+    triggerHook: 0,
+    // reverse: true
+}).setPin('.section_06')
+.setTween(tlpin)
+.addIndicators({
+    name: 'scence pin 04'
+})
+.addTo(controller);
 
 
 
 
+var tlimax = new TimelineMax();
+
+tlimax.fromTo('.bgall01', 1, {
+    x: "-100%"
+}, {
+    x: '0%'
+}).fromTo('.bgall02', 1, {
+    x: "100%"
+}, {
+    x: '0%'
+}).fromTo('.bgall03', 1, {
+    y: "-100%"
+}, {
+    y: '0%'
+})
 
 
+
+var scene_sce = new ScrollMagic.Scene({
+        triggerElement: "#fff",
+        duration: '300%',
+        //畫面最上緣
+        triggerHook: 0,
+        //只出現一次
+        // reverse: false,
+    })
+    .setPin('.section_07')
+    .setTween(tlimax)
+    .addIndicators()
+    .addTo(controller);
 
 
 
