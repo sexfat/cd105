@@ -18,32 +18,35 @@
 
 
 #btn {
-   width:  50px;
-   height: 30px;
-   background-color: rgb(33, 159, 233);
-   cursor: pointer;
-
-
-}
-#btn_to {
-    width:  50px;
+    width: 50px;
     height: 30px;
     background-color: rgb(33, 159, 233);
     cursor: pointer;
 
-    
+
+}
+
+#btn_to {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(33, 159, 233);
+    cursor: pointer;
+
+
 
 }
 
 .section_01 {
     background-color: rgb(255, 250, 190);
+
     .box_01 {
-       position: relative;
+        position: relative;
         // margin-left: 300px;
         // margin-top: 300px;
         top: 300px;
         left: 300px;
     }
+
     .text {
         width: 300px;
         height: 30px;
@@ -52,39 +55,45 @@
         // background-color: #fff;
         display: block;
     }
+
     .width {
         margin-top: 20px;
         width: 100px;
         height: 10px;
         background-color: rgb(0, 0, 0);
     }
+
     .box_02 {
-       background-color: rgb(41, 189, 0);   
+        background-color: rgb(41, 189, 0);
     }
+
     .box_03 {
         background-color: rgb(30, 206, 174);
-        margin:5px 0px;
-     }
-     .box_04 {
-         background-color: rgb(39, 185, 247);   
-     }
-     .box_05 {
+        margin: 5px 0px;
+    }
+
+    .box_04 {
+        background-color: rgb(39, 185, 247);
+    }
+
+    .box_05 {
         background-color: rgb(164, 39, 254);
-        @include margin-auto(); 
+        @include margin-auto();
         width: 100px;
-        height: 100px;  
+        height: 100px;
     }
 
 
 }
 
 
-.section_02{
+.section_02 {
 
     .box_01 {
         background-color: rgb(125, 102, 148);
 
     }
+
     .box_02 {
         background-color: rgb(41, 63, 136);
 
@@ -93,6 +102,7 @@
 
 .section_03 {
     background-color: rgb(255, 139, 139);
+
     // #aaa {
     //     position: relative;
     //     top: 100px;
@@ -102,9 +112,63 @@
         height: 60px;
         position: relative;
         top: 100px;
-        left: 200px; 
+        left: 200px;
         // margin-top:10px;
         background-color: rgb(205, 46, 46);
+    }
+
+
+}
+
+.section_04 {
+    background-color: #000;
+    color: #fff;
+
+
+    .title {
+        margin: 0 auto;
+        min-width: 400px;
+        text-align: center;
+        font-size: 36px;
+        position: relative;
+        top: 300px;
+    }
+
+    .slogan {
+        margin: 0 auto;
+        min-width: 400px;
+        text-align: center;
+        position: relative;
+        top: 310px;
+    }
+
+    .btn {
+        margin: 0 auto;
+        width: 300px;
+        height: 50px;
+        background-color: rgb(255, 28, 28);
+        position: relative;
+    }
+
+    .u-btns {
+        // margin-top: 30px;
+        background-color: rgb(130, 13, 13);
+    }
+
+    .btns {}
+
+
+}
+
+.section_05 {
+    background-color: rgb(188, 255, 237);
+    .setclass {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(205, 49, 49);
+        &.on{
+            background-color: rgb(47, 238, 37);
+        }
     }
 
 

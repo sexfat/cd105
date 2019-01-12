@@ -119,9 +119,13 @@ tl.to('.section_02 .box_02', 1, {
 //)
 
 
-document.getElementById('btn_to').onclick =function (){
-  
-    TweenMax.to(window, 2, {scrollTo:{y:"#arch"}});
+document.getElementById('btn_to').onclick = function () {
+
+    TweenMax.to(window, 2, {
+        scrollTo: {
+            y: "#arch"
+        }
+    });
 
 }
 
@@ -133,28 +137,97 @@ var controller = new ScrollMagic.Controller();
 
 
 
-var an01 = TweenMax.to('.scrollbox' , .7 , {
+var an01 = TweenMax.to('.scrollbox', .7, {
     // x : 100
     rotation: 720,
     ease: Power0.easeNone,
     transformOrigin: "center center",
-    repeat:-1
-}) 
-
-
+    // repeat:-1
+})
 
 
 var scene01 = new ScrollMagic.Scene({
-    triggerElement: '#aaa',
-    offset: 0,
-    // duration: '100%'
-    // triggerHook: 0.5,
-    // reverse: false
-}).setTween(an01)
-.addIndicators({
+        triggerElement: '#aaa',
+        offset: 0,
+        // duration: '100%'
+        // triggerHook: 0.5,
+        // reverse: true
+    }).setTween(an01)
+    .addIndicators({
+        name: 'scence 01'
+    })
+    .addTo(controller);
+
+
+
+
+var animation_02 = new TimelineMax();
+
+
+
+animation_02.fromTo('.title', 1, {
+    opacity: 0,
+    y: -30
+}, {
+    opacity: 1,
+    y: 0
+}).fromTo('.slogan', 1, {
+    opacity: 0,
+    x: -100
+}, {
+    opacity: 1,
+    x: 0
+})
+
+
+var btns = new TimelineMax();
+var btnss = new TimelineMax();
+
+btns.set('.u-btns', {
+    rotationX: -90
+}).to('.u-btns', 1, {
+    rotationX: 0,
+    transformOrigin: "center top",
+    transformPerspective: 900,
+    ease: Power0.easeNone,
+})
+
+btnss.set('.btns', {
+    rotationX: 0
+}).to('.btns', 1, {
+    rotationX: 90,
+    transformOrigin: "center bottom",
+    transformPerspective: 900,
+    ease: Power0.easeNone,
+})
+
+var scene02 = new ScrollMagic.Scene({
+        triggerElement: '#bbb',
+        offset: 0,
+        duration: 400,
+        // triggerHook: 0.5,
+        reverse: true
+    }).setTween([btns, btnss, animation_02])
+    .addIndicators({
         name: 'scence 02'
-      })
-.addTo(controller);
+    })
+    .addTo(controller);
+
+
+
+
+var scene03 = new ScrollMagic.Scene({
+        triggerElement: '#ccc',
+     
+        // triggerHook: 0.5,
+        // reverse: true
+    }).setClassToggle('.setclass' , 'on')
+    .addIndicators({
+        name: 'scence 03'
+    })
+    .addTo(controller);
+
+
 
 
 
